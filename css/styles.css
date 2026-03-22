@@ -112,7 +112,9 @@ select {
   margin-top: 5px;
 }
 
-.btn-quote {
+#hero-btn-quote {
+  display: flex;
+  text-decoration: none;
   background-color: var(--accent);
   color: white;
   border: none;
@@ -121,6 +123,13 @@ select {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  justify-content: center;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+#hero-btn-quote:hover {
+  background-color: #3d3dd2;
 }
 
 .hero-background {
