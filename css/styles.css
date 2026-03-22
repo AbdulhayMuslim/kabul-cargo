@@ -228,6 +228,8 @@ select {
 .mission-vision {
   background-color: var(--card-bg);
   padding: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .mv-parent {
@@ -235,6 +237,7 @@ select {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 3rem;
+    width: 60%;
 }
 
 .section-block {
