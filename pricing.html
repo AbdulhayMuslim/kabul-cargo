@@ -1,169 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/pricing.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/pricing.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="logo">
-            <img src="./images/logo white.png" alt="logo-img" class="nav-logo">
-        </div>
-        <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <nav class="navbar">
-            <ul class="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="pricing.html#get-quote" class="nav-btn">Get a Quote</a>
+      <div class="logo">
+        <img src="./images/logo white.png" alt="logo-img" class="nav-logo" />
+      </div>
+
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="pricing.html#get-quote" class="nav-btn">Get a Quote</a>
     </header>
 
     <!-- Pricing Page -->
     <main class="main">
-        <section class="hero-section">
-            <div class="content-box">
-                <h1>Get a Quick Shipping Estimate</h1>
-                <h2>Easily calculate your cargo shipping cost in seconds.</h2>
-                <img src="images/pricing hero image.jpg" alt="pricing image">
-                <img src="images/logo.png" alt="logo" id="logo">
+      <section class="hero-section">
+        <div class="content-box">
+          <h1>Get a Quick Shipping Estimate</h1>
+          <h2>Easily calculate your cargo shipping cost in seconds.</h2>
+          <img src="images/pricing hero image.jpg" alt="pricing image" />
+          <img src="images/logo.png" alt="logo" id="logo" />
+        </div>
+        <div class="pricing-form" id="get-quote">
+          <form action="submit" class="form-field">
+            <div class="form-group">
+              <label for="origin" class="label-title">Origin:</label>
+              <select name="origin" id="origin" required>
+                <option value="" disabled selected>-Select-</option>
+                <option value="Kabul">Kabul</option>
+                <option value="Parwan">Parwan</option>
+                <option value="Herat">Herat</option>
+                <option value="Kandahar">Kandahar</option>
+                <option value="Badakhshan">Badakhshan</option>
+                <option value="Balkh">Balkh</option>
+                <option value="Kunduz">Kunduz</option>
+                <option value="Takhar">Takhar</option>
+                <option value="Helmand">Helmand</option>
+                <option value="Kapisa">Kapisa</option>
+                <option value="Kunar">Kunar</option>
+              </select>
             </div>
-            <div class="pricing-form" id="get-quote">
-                <form action="submit" class="form-field">
-                    <div class="form-group">
-                        <label for="origin" class="label-title">Origin:</label>
-                        <select name="origin" id="origin" required>
-                            <option value="" disabled selected>-Select-</option>
-                            <option value="Kabul">Kabul</option>
-                            <option value="Parwan">Parwan</option>
-                            <option value="Herat">Herat</option>
-                            <option value="Kandahar">Kandahar</option>
-                            <option value="Badakhshan">Badakhshan</option>
-                            <option value="Balkh">Balkh</option>
-                            <option value="Kunduz">Kunduz</option>
-                            <option value="Takhar">Takhar</option>
-                            <option value="Helmand">Helmand</option>
-                            <option value="Kapisa">Kapisa</option>
-                            <option value="Kunar">Kunar</option>
-                        </select>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="destination" class="label-title">Destination:</label>
-                        <select name="destination" id="destination" required>
-                            <option value="" disabled selected>-Select-</option>
-                            <option value="Kabul">Kabul</option>
-                            <option value="Parwan">Parwan</option>
-                            <option value="Herat">Herat</option>
-                            <option value="Kandahar">Kandahar</option>
-                            <option value="Badakhshan">Badakhshan</option>
-                            <option value="Balkh">Balkh</option>
-                            <option value="Kunduz">Kunduz</option>
-                            <option value="Takhar">Takhar</option>
-                            <option value="Helmand">Helmand</option>
-                            <option value="Kapisa">Kapisa</option>
-                            <option value="Kunar">Kunar</option>
-                        </select>
-                    </div>
-
-                        <fieldset class="form-group">
-                        <legend class="label-title">Shipping Method:</legend>
-                        <label><input type="radio" name="shipping_method" value="land" required> Land</label>
-                        <label><input type="radio" name="shipping_method" value="air"> Air</label>
-                        <label><input type="radio" name="shipping_method" value="sea"> Sea</label>
-                        </fieldset>
-
-                        <fieldset class="form-group">
-                        <legend class="label-title">Cargo Type:</legend>
-                        <label><input type="radio" name="cargo_type" value="commercial" required> Commercial</label>
-                        <label><input type="radio" name="cargo_type" value="personal"> Personal</label>
-                        </fieldset>
-
-                    <div class="form-group">
-                        <label for="weight" class="label-title">Weight (kg):</label>
-                        <input type="number" id="weight" name="weight" min="0" step="0.1" required>
-                    </div>
-
-                        <div class="form-group dimension-group">
-                        <label class="label-title">Dimensions (cm):</label>
-                        <input type="number" id="length" name="length" min="0" step="0.1" placeholder="Length" required>
-                        <input type="number" id="width" name="width" min="0" step="0.1" placeholder="Width" required>
-                        <input type="number" id="height" name="height" min="0" step="0.1" placeholder="Height" required>
-                    </div>
-
-                        <fieldset class="form-group">
-                        <legend class="label-title">Delivery Type:</legend>
-                        <label><input type="radio" name="delivery_type" value="p2p" required> Port-to-Port</label>
-                        <label><input type="radio" name="delivery_type" value="d2d"> Door-to-Door</label>
-                        </fieldset>
-
-                    <div class="form-group">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
+            <div class="form-group">
+              <label for="destination" class="label-title">Destination:</label>
+              <select name="destination" id="destination" required>
+                <option value="" disabled selected>-Select-</option>
+                <option value="Kabul">Kabul</option>
+                <option value="Parwan">Parwan</option>
+                <option value="Herat">Herat</option>
+                <option value="Kandahar">Kandahar</option>
+                <option value="Badakhshan">Badakhshan</option>
+                <option value="Balkh">Balkh</option>
+                <option value="Kunduz">Kunduz</option>
+                <option value="Takhar">Takhar</option>
+                <option value="Helmand">Helmand</option>
+                <option value="Kapisa">Kapisa</option>
+                <option value="Kunar">Kunar</option>
+              </select>
             </div>
-        </section>
+
+            <fieldset class="form-group">
+              <legend class="label-title">Shipping Method:</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="shipping_method"
+                  value="land"
+                  required
+                />
+                Land</label
+              >
+              <label
+                ><input type="radio" name="shipping_method" value="air" />
+                Air</label
+              >
+              <label
+                ><input type="radio" name="shipping_method" value="sea" />
+                Sea</label
+              >
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend class="label-title">Cargo Type:</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="cargo_type"
+                  value="commercial"
+                  required
+                />
+                Commercial</label
+              >
+              <label
+                ><input type="radio" name="cargo_type" value="personal" />
+                Personal</label
+              >
+            </fieldset>
+
+            <div class="form-group">
+              <label for="weight" class="label-title">Weight (kg):</label>
+              <input
+                type="number"
+                id="weight"
+                name="weight"
+                min="0"
+                step="0.1"
+                required
+              />
+            </div>
+
+            <div class="form-group dimension-group">
+              <label class="label-title">Dimensions (cm):</label>
+              <input
+                type="number"
+                id="length"
+                name="length"
+                min="0"
+                step="0.1"
+                placeholder="Length"
+                required
+              />
+              <input
+                type="number"
+                id="width"
+                name="width"
+                min="0"
+                step="0.1"
+                placeholder="Width"
+                required
+              />
+              <input
+                type="number"
+                id="height"
+                name="height"
+                min="0"
+                step="0.1"
+                placeholder="Height"
+                required
+              />
+            </div>
+
+            <fieldset class="form-group">
+              <legend class="label-title">Delivery Type:</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="delivery_type"
+                  value="p2p"
+                  required
+                />
+                Port-to-Port</label
+              >
+              <label
+                ><input type="radio" name="delivery_type" value="d2d" />
+                Door-to-Door</label
+              >
+            </fieldset>
+
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-top">
-            <div class="footer-column">
-                <h4>About</h4>
-                <ul>
-                    <li><a href="#">company</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Our team</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#">International fright</a></li>
-                    <li><a href="#">All prouduct & Solutions</a></li>
-                    <li><a href="#">Quick Estimate</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Contact Us</h4>
-                <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="mailto:nawidkahn163@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-
-            </div>
+      <div class="footer-top">
+        <div class="footer-column">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Our team</a></li>
+          </ul>
         </div>
-        <div class="footer-end">
-            © 2025 Kabul Cargo. All rights reserved.
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">International Fright</a></li>
+            <li><a href="#">All Prouduct & Solutions</a></li>
+            <li><a href="#">Quick Estimate</a></li>
+          </ul>
         </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:nawidkahn163@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end">© 2025 Kabul Cargo. All rights reserved.</div>
     </footer>
-</body>
+  </body>
 </html>
